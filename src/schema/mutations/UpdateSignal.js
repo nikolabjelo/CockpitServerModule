@@ -23,8 +23,6 @@ const resolve = (parent, {
   }
 
   const signalUpdate = {
-    orderId: message.order.id,
-    orderCreator: message.order.creator,
     orderStatus: message.order.status,
     orderData: message.order,
     $push: {
